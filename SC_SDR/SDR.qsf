@@ -1,0 +1,126 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2025  Altera Corporation. All rights reserved.
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, the Altera Quartus Prime License Agreement,
+# the Altera IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Altera and sold by Altera or its authorized distributors.  Please
+# refer to the Altera Software License Subscription Agreements 
+# on the Quartus Prime software download page.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 25.3.1 Build 100 12/19/2025 SC Pro Edition
+# Date created = 09:15:53  maj 01, 2026
+#
+# -------------------------------------------------------------------------- #
+set_global_assignment -name TOP_LEVEL_ENTITY SDR
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 25.3.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:15:53  MAJ 01, 2026"
+set_global_assignment -name LAST_QUARTUS_VERSION "25.3.1 Pro Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 100
+set_global_assignment -name DEVICE A5ED013BB32AE4SCS
+set_global_assignment -name FAMILY "Agilex 5"
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name EDA_SIMULATION_TOOL "Questa Altera FPGA (VHDL)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name VHDL_INPUT_VERSION VHDL_2008
+set_global_assignment -name POWER_APPLY_THERMAL_MARGIN ADDITIONAL
+set_global_assignment -name VHDL_FILE src/Symbol_Shaper/Symbol_Shaper.vhd
+set_global_assignment -name VHDL_FILE src/DATA/DATA.vhd
+set_global_assignment -name VHDL_FILE src/DAC/DAC.vhd
+set_global_assignment -name SDC_FILE src/constraints.sdc
+set_global_assignment -name VHDL_FILE src/SDR.vhd
+set_global_assignment -name VHDL_FILE src/Frequency_Shifter/Freq.VHD
+set_global_assignment -name VHDL_FILE src/Pulse_Shaper/Pulse.vhd
+set_global_assignment -name PWRMGT_VOLTAGE_OUTPUT_FORMAT "LINEAR FORMAT"
+set_global_assignment -name PWRMGT_LINEAR_FORMAT_N "-12"
+
+
+set_location_assignment PIN_AC46 -to PLL_OUT_DAC0 -comment IOBANK_6G
+set_location_assignment PIN_Y37 -to PLL_OUT_DAC1 -comment IOBANK_6G
+set_location_assignment PIN_AA1 -to DA_WRTB -comment IOBANK_6F
+set_location_assignment PIN_T34 -to DA_WRTA -comment IOBANK_6G
+set_location_assignment PIN_T37 -to DA_MODE -comment IOBANK_6G
+set_location_assignment PIN_Y4 -to DA_DB[13] -comment IOBANK_6F
+set_location_assignment PIN_V8 -to DA_DB[12] -comment IOBANK_6E
+set_location_assignment PIN_AD2 -to DA_DB[11] -comment IOBANK_6F
+set_location_assignment PIN_AD1 -to DA_DB[10] -comment IOBANK_6F
+set_location_assignment PIN_AB4 -to DA_DB[9] -comment IOBANK_6F
+set_location_assignment PIN_AF2 -to DA_DB[8] -comment IOBANK_6F
+set_location_assignment PIN_Y8 -to DA_DB[7] -comment IOBANK_6E
+set_location_assignment PIN_AB8 -to DA_DB[6] -comment IOBANK_6E
+set_location_assignment PIN_AJ1 -to DA_DB[5] -comment IOBANK_6F
+set_location_assignment PIN_AL16 -to DA_DB[4] -comment IOBANK_6H
+set_location_assignment PIN_AK21 -to DA_DB[3] -comment IOBANK_6H
+set_location_assignment PIN_M34 -to DA_DB[2] -comment IOBANK_6G
+set_location_assignment PIN_Y15 -to DA_DB[1] -comment IOBANK_6E
+set_location_assignment PIN_M37 -to DA_DB[0] -comment IOBANK_6G
+set_location_assignment PIN_T15 -to DA_DA[13] -comment IOBANK_6E
+set_location_assignment PIN_AE4 -to DA_DA[12] -comment IOBANK_6F
+set_location_assignment PIN_AH4 -to DA_DA[11] -comment IOBANK_6E
+set_location_assignment PIN_AH8 -to DA_DA[10] -comment IOBANK_6E
+set_location_assignment PIN_AG13 -to DA_DA[9] -comment IOBANK_6E
+set_location_assignment PIN_AK16 -to DA_DA[8] -comment IOBANK_6H
+set_location_assignment PIN_AK25 -to DA_DA[7] -comment IOBANK_6H
+set_location_assignment PIN_AL25 -to DA_DA[6] -comment IOBANK_6H
+set_location_assignment PIN_AL29 -to DA_DA[5] -comment IOBANK_6H
+set_location_assignment PIN_AG29 -to DA_DA[4] -comment IOBANK_6H
+set_location_assignment PIN_AL32 -to DA_DA[3] -comment IOBANK_6G
+set_location_assignment PIN_AK32 -to DA_DA[2] -comment IOBANK_6G
+set_location_assignment PIN_Y34 -to DA_DA[1] -comment IOBANK_6G
+set_location_assignment PIN_P34 -to DA_DA[0] -comment IOBANK_6G
+set_location_assignment PIN_F37 -to POWER_ON -comment IOBANK_6G
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to DA_DA[10] -entity SDR
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to DA_DA[3] -entity SDR
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to DA_DB[11] -entity SDR
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to DA_DB[4] -entity SDR
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to POWER_ON -entity SDR
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to DA_DA[13] -entity SDR
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to DA_DA[6] -entity SDR
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to DA_DB[13] -entity SDR
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to DA_DB[12] -entity SDR
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to DA_DB[10] -entity SDR
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to DA_DB[9] -entity SDR
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to DA_DB[8] -entity SDR
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to DA_DB[7] -entity SDR
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to DA_DB[6] -entity SDR
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to DA_DB[5] -entity SDR
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to DA_DB[3] -entity SDR
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to DA_DB[2] -entity SDR
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to DA_DB[1] -entity SDR
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to DA_DB[0] -entity SDR
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to DA_WRTB -entity SDR
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to DA_DA[9] -entity SDR
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to DA_DA[2] -entity SDR
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to PLL_OUT_DAC0 -entity SDR
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to DA_DA[12] -entity SDR
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to DA_DA[5] -entity SDR
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to DA_DA[8] -entity SDR
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to DA_DA[1] -entity SDR
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to PLL_OUT_DAC1 -entity SDR
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to DA_DA[11] -entity SDR
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to DA_DA[4] -entity SDR
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to DA_MODE -entity SDR
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to DA_DA[7] -entity SDR
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to DA_DA[0] -entity SDR
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to DA_WRTA -entity SDR
+set_location_assignment PIN_CH128 -to CLK -comment IOBANK_5A
+set_location_assignment PIN_BM62 -to RST -comment IOBANK_2A_T
+set_instance_assignment -name PARTITION_COLOUR 4287852543 -to SDR -entity SDR
+set_instance_assignment -name IO_STANDARD "1.2-V" -to RST -entity SDR
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to CLK -entity SDR
+set_location_assignment PIN_BE21 -to TRIG -comment IOBANK_6B
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to TRIG -entity SDR
+set_global_assignment -name FLOW_ENABLE_INTERACTIVE_TIMING_ANALYZER OFF

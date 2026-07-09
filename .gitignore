@@ -1,0 +1,5 @@
+*.bak
+**/dni
+**/qdb
+**/output_files
+**/tmp-clearbox
