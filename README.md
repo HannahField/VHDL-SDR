@@ -1,6 +1,8 @@
 # Overview
 This project contains the three main architectures for my FPGA based Software Defined Radio transmitter bachelor project. It also includes the full report for my bachelor project, except the front page, as it contains personal information.
 
+Note that this repository is frozen in time as of the submission of my project on 09/06/2026. For an up-to-date and maintained version of the FFT module, [check out this repository](https://github.com/HannahField/VHDL-FFT)
+
 The project is made for the [Terasic DE25](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=115&No=1354#contents), which is based on an Agilex 5 platform.
 
 
